@@ -12,6 +12,7 @@ def process_data(input_file_name):
 
         # Convert the date part from 'YYYYMMDD' to '%Y-%m-%d' format
         formatted_date = datetime.strptime(date_str, "%Y%m%d").strftime("%Y-%m-%d")
+        # strptime (string parse time) from the datetime module to parse the date_str variable
 
         # Define your GCS bucket and paths
         bucket = "daily-csv-files"
